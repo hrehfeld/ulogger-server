@@ -13,6 +13,7 @@ ENV ULOGGER_ENABLE_SETUP 0
 
 ENV LANG=en_US.utf-8
 
+RUN apk -U upgrade
 RUN apk add --no-cache \
     nginx \
     php7-ctype php7-fpm php7-json php7-pdo php7-session php7-simplexml php7-xmlwriter
